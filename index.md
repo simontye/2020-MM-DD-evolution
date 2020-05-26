@@ -14,8 +14,8 @@ humantime: "Time"    # human-readable times for the workshop (e.g., "9:00 am - 4
 startdate: "Start"      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: "End"        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["instructor one", "instructor two"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["helper one", "helper two"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-hosts: ["helper one", "helper two"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["A", "B"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+host: ["C", "D", "E", "F"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["eslehmberg@tamu.edu","simontye@uark.edu"]    # boxed, comma-separated list of contact email addresses
 collaborative_notes: "https://docs.google.com/document/d/16ShDhdB5ZoyWYkgx6VxrG82FzY7sbzLpEgDy3iTydsU/edit?usp=sharing" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 ---
@@ -43,6 +43,8 @@ It looks like you are setting up a website for a Data Carpentry curriculum but y
 {% endunless %}
 {% endif %}
 
+<hr style="height:1px;border-width:0;color:black;background-color:black">
+
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -62,6 +64,7 @@ the pitch.
 {% comment %}
 AUDIENCE
 
+<hr style="height:1px;border-width:0;color:black;background-color:black">
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
@@ -186,7 +189,7 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
-<hr/>
+<hr style="height:1px;border-width:0;color:black;background-color:black">
 
 {% comment%}
 CODE OF CONDUCT
@@ -202,7 +205,8 @@ Everyone who participates in Carpentries activities is required to conform to th
     <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
   </a>
 </p>
-<hr/>
+
+<hr style="height:1px;border-width:0;color:black;background-color:black">
 
 
 {% comment %}
@@ -224,7 +228,9 @@ available at https://codimd.carpentries.org
 <p>
 We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
 </p>
-<hr/>
+
+<hr style="height:1px;border-width:0;color:black;background-color:black">
+
 {% endif %}
 
 
@@ -236,7 +242,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 
-<hr/>
+<hr style="height:1px;border-width:0;color:black;background-color:black">
 
 
 {% comment %}
@@ -256,7 +262,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% include lc/schedule.html %}
 {% endif %}
 
-<hr/>
+<hr style="height:1px;border-width:0;color:black;background-color:black">
 
 {% comment %}
 SYLLABUS
@@ -285,7 +291,7 @@ please preview your site before committing, and make sure to run
 {% include lc/syllabus.html %}
 {% endif %}
 
-<hr/>
+<hr style="height:1px;border-width:0;color:black;background-color:black">
 
 {% comment %}
 SETUP
@@ -327,3 +333,6 @@ please preview your site before committing, and make sure to run
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% endif %}
+
+<hr style="height:1px;border-width:0;color:black;background-color:black">
+
