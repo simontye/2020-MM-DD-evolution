@@ -11,12 +11,12 @@ latitude: "0"        # decimal latitude of workshop venue (use https://www.latlo
 longitude: "0"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Date"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "Time"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: Start      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: End        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+startdate: "Start"      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: "End"        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["instructor one", "instructor two"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["helper one", "helper two"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 hosts: ["helper one", "helper two"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["first@example.org","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+email: ["eslehmberg@tamu.edu","simontye@uark.edu"]    # boxed, comma-separated list of contact email addresses
 collaborative_notes: "https://docs.google.com/document/d/16ShDhdB5ZoyWYkgx6VxrG82FzY7sbzLpEgDy3iTydsU/edit?usp=sharing" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 ---
 
@@ -128,7 +128,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (<a href="#setup">listed below</a>).
 </p>
 
 {% comment %}
